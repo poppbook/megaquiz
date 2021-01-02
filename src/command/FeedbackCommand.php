@@ -15,8 +15,6 @@ class FeedbackCommand extends Command
 
     public function execute(CommandContext $context)
     {
-        // new and risky development
-        // goes here
         $msgSystem = ReceiverFactory::getMessageSystem();
         $email = $context->get('email');
         $msg = $context->get('pass');
