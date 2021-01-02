@@ -34,7 +34,7 @@ class CommandContext
  * This class is essentially a wrapper for this array
  * @var array
  */
-    private $params = array();
+    private array $params = [];
 
 /**
  * An error message.
@@ -50,7 +50,7 @@ class CommandContext
 
     public function addParam($key, $val)
     {
-        $this->params[$key]=$val;
+        $this->params[$key] = $val;
     }
 
     public function get($key)
