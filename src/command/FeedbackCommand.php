@@ -13,8 +13,12 @@ namespace poppbook\megaquiz\command;
 class FeedbackCommand extends Command
 {
 
-    public function execute(CommandContext $context)
+    public function execute(CommandContext $context): bool
     {
+
+        // new and risky development
+        // goes here
+
         $msgSystem = ReceiverFactory::getMessageSystem();
         $email = $context->get('email');
         $msg = $context->get('pass');
