@@ -1,5 +1,5 @@
 {
-    "name": "popp5/megaquiz",
+    "name": "poppbook/megaquiz",
     "description": "a truly mega quiz",
     "authors": [
         {
@@ -11,12 +11,12 @@
         "phpunit/phpunit": "*"
     },
     "require": {
-        "abraham/twitteroauth": "0.6.*",
+        "abraham/twitteroauth": "2.0.*",
         "ext-xml": "*"
     },
     "autoload": {
         "psr-4": { 
-            "popp5\\megaquiz\\": ["src"]
+            "poppbook\\megaquiz\\": ["src"]
         }
     }
 }

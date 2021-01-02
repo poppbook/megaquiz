@@ -2,9 +2,9 @@
 
 require_once(__DIR__."/vendor/autoload.php");
 
-use popp5\megaquiz\command\CommandContext;
-use popp5\megaquiz\command\LoginCommand;
-use popp5\megaquiz\quiztools\AccessManager;
+use poppbook\megaquiz\command\CommandContext;
+use poppbook\megaquiz\command\LoginCommand;
+use poppbook\megaquiz\quiztools\AccessManager;
 
 $context = new CommandContext("megaquiz");
 $context->addParam("username", "bob");
