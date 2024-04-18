@@ -25,6 +25,7 @@ class LoginCommand extends Command
             $this->context->setError($manager->getError());
             return false;
         }
+
         $context->addParam("user", $user);
         return true;
     }
