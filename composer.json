@@ -1,0 +1,23 @@
+{
+    "name": "poppbook/megaquiz",
+    "description": "a truly mega quiz",
+    "authors": [
+        {
+            "name": "matt zandstra",
+            "email": "matt@getinstance.com"
+        }
+    ],  
+    "license": "Apache-2.0",
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "require": {
+        "orhanerday/open-ai": "^5.0",
+        "ext-xml": "*"
+    },
+    "autoload": {
+        "psr-4": { 
+            "poppbook\\megaquiz\\": ["src", "test"]
+        }
+    }
+}
