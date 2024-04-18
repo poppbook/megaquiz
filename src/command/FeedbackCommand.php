@@ -12,7 +12,6 @@ namespace poppbook\megaquiz\command;
  */
 class FeedbackCommand extends Command
 {
-
     public function execute(CommandContext $context): bool
     {
 
@@ -24,7 +23,7 @@ class FeedbackCommand extends Command
         $msg = $context->get('pass');
         $topic = $context->get('topic');
         $result = $msgSystem->despatch($email, $msg, $topic);
-        if (! $user) {
+        if (! $result) {
             $this->context->setError($msgSystem->getError());
             return false;
         }
